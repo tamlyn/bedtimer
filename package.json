@@ -1,0 +1,26 @@
+{
+  "name": "bedtimer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "now-build": "rm -rf dist && parcel build src/index.html",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "babel-jest": "^24.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.1.0",
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-sw-precache": "^1.0.4",
+    "preact": "^8.4.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    font-size: 30px;
+}
+
+.segment + .segment {
+    border-top: 1px solid #888;
+}
+
+.segment svg {
+    margin: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Bedtimer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#444",
+  "theme_color": "#444",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
