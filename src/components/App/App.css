@@ -8,11 +8,10 @@ body {
   font-family: sans-serif;
   background-color: #444;
   color: #eee;
+  height: 100%;
 }
 
-.app {
-  position: absolute;
+#root {
   height: 100%;
-  width: 100%;
 }
 

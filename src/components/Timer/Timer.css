@@ -1,7 +1,14 @@
+.timer {
+    height: 100%;
+}
+
+.timer .segment {
+    position: relative;
+}
+
 .progress {
     position: absolute;
     width: 100%;
     bottom: 0;
     background-color: black;
-    z-index: -10;
 }

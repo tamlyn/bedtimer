@@ -28,8 +28,8 @@ export const segmentSizes = (startTime, totalDuration, segments) => {
 };
 
 export default class Timer extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       segments: [
@@ -40,7 +40,7 @@ export default class Timer extends Component {
         { color: "#1B55C0", name: "Stories", completed: false, icon: <Book/> }
       ],
       startTime: null,
-      totalTime: 3 * 60 * 1000
+      totalTime: props.runTime * 60 * 1000
     };
 
     this.startTimer();
@@ -106,7 +106,7 @@ export default class Timer extends Component {
     ).reverse();
 
     return (
-      <div class="app">
+      <div class="timer">
         <div
           class="progress"
           style={{
